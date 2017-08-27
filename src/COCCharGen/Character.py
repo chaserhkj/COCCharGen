@@ -52,15 +52,7 @@ class Character():
         """Use generator to generate stats.
 
         generator: a generator object, must implement generate_* functions in class Generator."""
-        generator.generate_basic_info(self)
-        generator.generate_characteristics(self)
-        generator.generate_status(self)
-        generator.generate_combact_stat(self)
-        generator.generate_skills(self)
-        generator.generate_weapons(self)
-        generator.generate_backstory(self)
-        generator.generate_inventory(self)
-        generator.generate_financial_status(self)
+        generator.generate_char(self)
 
     def dump(self, f, fmt="json"):
         """Dump to file."""
